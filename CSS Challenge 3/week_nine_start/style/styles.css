@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: .5em;
+}
+
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rampart One', cursive;
+}
+
+p:has(> a) {
+    text-align: center;
+}
+
+header {
+    height: 15vw;
+    background-color: #FF8360;
+    color: #fff;
+    margin-bottom: 2.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.main-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    border: 2px solid #999;
+    padding: 1em;
+}
+
+main section > div + p {
+    background-color: #3CDBD3;
+    padding: 1em;
+}
+
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;
+}
+
+main section:nth-of-type(3) p {
+    display: flex;
+    padding: 10em;
+    flex: auto;
+}
+
+footer p,
+footer a {
+    background-color: #7DCE82;
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    background-color: #FF8360;
+    text-align: center;
+}
+
+footer a:hover {
+    background-color: #9C528B;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+footer p {
+    flex-basis: 47.5%;
+    order: 2;
+    width: 700px;
+}
+
+footer a {
+    flex-basis: 5%;
+    order: 1;
+    font-size: .5em;
+}
+
+section {
+    margin-bottom: 2.5vh;
+    justify-content: space-between;
+}
+
+#sec2 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+@media (min-width: 1080px) {
+    p {
+        font-size: .6em;
+    }
+
+    footer a {
+        font-size: .6em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.div1 {
+    width: 50%;
+}
+
+p {
+    margin: 0;
+    text-align: top;
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: row;
+}
+
+main section:nth-of-type(2) p {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    margin: 1%;
+}
+
+.main-wrapper {
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    flex-direction: top;
+}
+
+section:nth-of-type(6) p {
+    display: flex;
+    flex-flow: row;
+    min-width: 500px;
+}

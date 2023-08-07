@@ -1,0 +1,213 @@
+
+body, div.navbar {
+    margin: 0;
+    padding: 0 0 1em;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #312f2f;
+    height: 50px; 
+    padding: 10px;
+  }
+  
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff; 
+    font-style: italic;
+  }
+  
+ 
+  .links a {
+    margin-left: 15px;
+    color: #ffffff;
+    text-decoration: none; 
+  }
+
+  .links a:hover {
+    color: #ffffff; 
+    background-color: #000000;
+    border-radius: 5px; 
+    padding: 5px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 15em 15em 15em;
+    grid-gap: 20px;
+ 
+  }
+  
+  .cards {
+    background-color: #f0f0f0;
+    padding: 0.5em 1.5em;
+
+  }
+
+  .sidebar{
+    border: 3px solid #000000;
+    background-color:#464343;
+}
+
+h2{
+    background-color: #312f2f;
+    padding: 1em 1em;
+    color: #fff;
+   
+}
+
+li{
+    border: 2px solid #000000;
+    width: 15vw;
+  
+}
+
+.links{
+padding: 0 0 1;
+}
+
+
+
+
+
+
+.cards {
+    background-color: #f0f0f0;
+    padding: 10px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+  }
+  
+ .cards1 {
+ grid-row-start: 2;
+ grid-row-end: 2;
+ grid-column-start: 2;
+ grid-column-end: 2;
+}
+  
+.cards2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+.cards3 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+} 
+
+.cards4 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+/*.cards5 {
+    grid-row-start: ;
+    grid-row-end: ;
+    grid-column-start: ;
+    grid-column-end: ;
+}
+*/
+main{
+    width: 65vw;
+    font-size: 1.5em;
+}
+
+aside{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    color: #fff;
+    width: 15vw;
+    
+}
+
+.logo{
+    padding: 10px 10px;
+}
+
+.links
+{
+    padding: 
+}
+
+
+/*how to get rid of the list dots
+how to fix the aside bar
+and how to pad the 
+
+I used the pixel 5 for my viewport width
+*/
+
+@media (min-width: 600px) {
+ .cards1,
+ .cards2,
+ .cards3,
+ .cards4,
+ .cards5 {
+     width: 380px;
+ 
+}
+
+.cards{
+  
+grid-row-start: 2;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 1;
+font-size: 0.8em;
+
+} .cards1 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+ }
+   
+ .cards2 {
+     grid-row-start: 4;
+     grid-row-end: 4;
+     grid-column-start: 1;
+     grid-column-end: 1;
+ }
+ .cards3 {
+     grid-row-start: 5;
+     grid-row-end: 5;
+     grid-column-start: 1;
+     grid-column-end: 1;
+ } 
+ 
+ .cards4 {
+     grid-row-start: 6;
+     grid-row-end: 6;
+     grid-column-start: 1;
+     grid-column-end: 1;
+ }
+
+}
+
+
+li::marker{
+list-style: none;
+}
+
+ul.cards{
+  list-style: none;
+}
+
+ul > li{
+  list-style: none;
+}

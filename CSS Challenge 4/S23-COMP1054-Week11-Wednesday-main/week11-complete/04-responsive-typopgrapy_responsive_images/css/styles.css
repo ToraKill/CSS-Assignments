@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+body {
+    font-family: 'PT Serif', serif;
+    color: #7f7f7f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+.title>p:first-of-type {
+    font-family: 'Lato', sans-serif;
+    color: #002395;
+}
+
+
+/* Appearance & Layout */
+
+.wrapper {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header {
+    padding: 3em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1 {
+    padding: 0.25em 0 1em 0;
+    font-size: 2rem;
+}
+
+h2,
+p {
+    padding: 1em 0;
+}
+
+/* object contain and cover demo */
+
+/*.image {
+    width: 90vw; 
+    height: 300px; 
+}*/
+
+/* Responsive */
+
+/* Responsive Typography */
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 1.75rem;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {
+
+    html {
+        font-size: 2.25rem;
+    }
+}
+
+*/
+
+html {
+    /* scale text acording to the user's viewport size */ 
+    /*font-size: calc(0.75rem + 1.5vw);*/ 
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 1.5rem); 
+}
+
+
+/* Responsive Images  */
+
+/* Strategy One - Constrain Your Images */
+
+
+
+
+
+
+
+/* Declare that images should never be rendered at a size wider than their containing element using max-inline-size. */
+
+img {
+    height: 100%; 
+    width: 100%; 
+    max-inline-size: 100%; /* almost the same as max-width: 100% */ 
+    block-size: auto; 
+}

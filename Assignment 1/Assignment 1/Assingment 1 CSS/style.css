@@ -1,0 +1,142 @@
+/* i had to redo it and i kept some of my old code so I might have duplicate stuff or little things odd*/
+
+
+
+/* type selector & fonts */
+body, h3 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+}
+h1, h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+/* custom web fonts */
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('comfortaa.woff2') format('woff2'),
+       url('comfortaa.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.woff2') format('woff2'),
+       url('roboto.woff') format('woff');
+}
+
+
+
+
+/* child combinator */
+section > .box {
+  border: 1px solid #000000;
+}
+/* direct sibling combinator*/
+h2 + p {
+  color: #000000;
+}
+/* general sibling combinator */
+h2 ~ p {
+  font-style: italic;
+}
+/* background gradient */
+body {
+  background: linear-gradient(to bottom, #ffffff, #222222);
+}
+/* font sizing */
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+/* creative element  */
+.box:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+ /* all above is old code but some of it works for this so I'm just going to
+ keep all of it  ya know? */
+
+ /* reset some default browser stuff*/
+body, h1, h2, h3, p {
+  margin: 10;
+  padding: 5;
+}
+
+/* class selector */
+.title {
+  border: 2px solid black;
+  padding: 5px;
+}
+/* id selector */
+#zen-intro {
+  margin-top: 50px;
+}
+/* attribute selector */
+a[href] {
+  color: purple;
+}
+/* pseudo-class selector  */
+a:hover {
+  text-decoration: underline;
+}
+/* descendant combinator  */
+.main .explanation {
+  margin-bottom: 10px;
+}
+/* child combinator  */
+ul > li {
+  list-style-type: square;
+}
+/* direct sibling combinator  */
+.design-name + .designer-name {
+  font-style: italic;
+}
+/* general sibling combinator  */
+.design-name ~ .design-name {
+  margin-top: 10px;
+}
+/* background*/
+body {
+
+  background-image: url('header-bg.jpg'); /* Set a background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Position the background image at the center */
+  background-size: cover; /* Make the background image cover the entire container */
+}
+/* some stying of the text from here on*/
+body {
+  background-color: #f1f1f1;
+  color: #333;
+}
+.main {
+  padding: 20px;
+}
+.design-selection li {
+  margin-bottom: 10px;
+}
+.design-name:hover {
+  color: #000000;
+}
+h3 {
+  border: 1px solid black;
+  padding: 10px;
+}
+p{
+color: #000000;
+}
+h1, h2, h3{
+  color: #000000
+}
+h1{
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
